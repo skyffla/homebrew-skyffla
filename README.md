@@ -1,18 +1,41 @@
-# Jonaslindblom Skyffla
+# Skyffla Homebrew Tap
 
-## How do I install these formulae?
+This tap publishes two formulas:
 
-`brew install jonaslindblom/skyffla/<formula>`
+- `skyffla`: the terminal-native peer communication CLI
+- `skyffla-rendezvous`: the rendezvous server
 
-Or `brew tap jonaslindblom/skyffla` and then `brew install <formula>`.
+## Install
 
-Or, in a `brew bundle` `Brewfile`:
+Install the CLI:
 
-```ruby
-tap "jonaslindblom/skyffla"
-brew "<formula>"
+```sh
+brew install jonaslindblom/skyffla/skyffla
 ```
 
-## Documentation
+Install the rendezvous server:
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+```sh
+brew install jonaslindblom/skyffla/skyffla-rendezvous
+```
+
+If you use both, install both explicitly:
+
+```sh
+brew install jonaslindblom/skyffla/skyffla
+brew install jonaslindblom/skyffla/skyffla-rendezvous
+```
+
+You can also tap once and then install by formula name:
+
+```sh
+brew tap jonaslindblom/skyffla
+brew install skyffla
+brew install skyffla-rendezvous
+```
+
+## Source
+
+Source repository:
+
+- https://github.com/jonaslindblom/skyfflacli
