@@ -1,14 +1,25 @@
 class Skyffla < Formula
   desc "Terminal-native peer communication tool"
   homepage "https://github.com/skyffla/skyffla"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/skyffla/skyffla/releases/download/v0.1.2/skyffla-v0.1.2-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "4aad160146af886017f290d686056792215ef3cb7a2fc8d7f99dac3990d31a23"
-  else
-    odie "This formula currently ships x86_64 Linux artifacts only."
+  if OS.mac?
+    if Hardware::CPU.arm?
+      url "https://github.com/skyffla/skyffla/releases/download/v0.1.3/skyffla-v0.1.3-aarch64-apple-darwin.tar.gz"
+      sha256 "b73bc38b1626c06eb60e79803725a365e6a128410d12955675cabef1edb938f6"
+    else
+      url "https://github.com/skyffla/skyffla/releases/download/v0.1.3/skyffla-v0.1.3-x86_64-apple-darwin.tar.gz"
+      sha256 "a1777172e72a79665e97d330a49a9104d38afab3bf0ba25f5de68fe26dbfa046"
+    end
+  elsif OS.linux?
+    if Hardware::CPU.arm?
+      url "https://github.com/skyffla/skyffla/releases/download/v0.1.3/skyffla-v0.1.3-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "8e87775f20cb1c0dc9c78281d0d082ea95c0bedfb7d764c2da3b57ba3a18762a"
+    else
+      url "https://github.com/skyffla/skyffla/releases/download/v0.1.3/skyffla-v0.1.3-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "77183fdf60bff6ab5a493cb95d77ce629b82a96756368b6620a7e9a1af2cf08b"
+    end
   end
 
   def install
