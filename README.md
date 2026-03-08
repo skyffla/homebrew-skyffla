@@ -1,41 +1,28 @@
 # Skyffla Homebrew Tap
 
-This tap publishes two formulas:
+Homebrew tap for [Skyffla](https://github.com/skyffla/skyffla) — CLI-first peer communication in Rust with a separate rendezvous service.
 
-- `skyffla`: the terminal-native peer communication CLI
-- `skyffla-rendezvous`: the rendezvous server
+## Formulae
+
+- `skyffla` — the CLI
+- `skyffla-rendezvous` — the rendezvous server
 
 ## Install
+
+Add the tap once:
+
+```sh
+brew tap skyffla/skyffla
+```
 
 Install the CLI:
 
 ```sh
-brew install skyffla/skyffla/skyffla
+brew install skyffla
 ```
 
 Install the rendezvous server:
 
 ```sh
-brew install skyffla/skyffla/skyffla-rendezvous
-```
-
-If you use both, install both explicitly:
-
-```sh
-brew install skyffla/skyffla/skyffla
-brew install skyffla/skyffla/skyffla-rendezvous
-```
-
-You can also tap once and then install by formula name:
-
-```sh
-brew tap skyffla/skyffla
-brew install skyffla
 brew install skyffla-rendezvous
 ```
-
-## Source
-
-Source repository:
-
-- https://github.com/skyffla/skyffla
