@@ -1,24 +1,24 @@
 class Skyffla < Formula
-  desc "Terminal-native peer communication tool"
+  desc "CLI FIRST P2P FOR THE AGENTIC ERA"
   homepage "https://github.com/skyffla/skyffla"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/skyffla/skyffla/releases/download/v0.1.5/skyffla-v0.1.5-aarch64-apple-darwin.tar.gz"
-      sha256 "bb83b85bc9af3a8794bfb7c1f1e58ebca03b2fecd7f858429296781112804efb"
+      url "https://github.com/skyffla/skyffla/releases/download/v0.1.6/skyffla-v0.1.6-aarch64-apple-darwin.tar.gz"
+      sha256 "1008ab09fd5de6fe7c3352973cbcd5637d2e1a331034da105391420b81ae0fc3"
     else
-      url "https://github.com/skyffla/skyffla/releases/download/v0.1.5/skyffla-v0.1.5-x86_64-apple-darwin.tar.gz"
-      sha256 "16f928a061b9dbf012278f18868e2852440b9959b219d0419e4c8713fb2fe2f7"
+      url "https://github.com/skyffla/skyffla/releases/download/v0.1.6/skyffla-v0.1.6-x86_64-apple-darwin.tar.gz"
+      sha256 "990a7748327dcfeceb9799af5a3e14f9a7e4a41510e1d8456ee35717fbb5fc0c"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/skyffla/skyffla/releases/download/v0.1.5/skyffla-v0.1.5-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "b085da975fe6f0375a70965f2be40c3a4663584db36fb1cf9a93efb5d68d68ea"
+      url "https://github.com/skyffla/skyffla/releases/download/v0.1.6/skyffla-v0.1.6-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ca3238a3993a72f7d2dde5340a99d32e18a08e504e26426046a2274d2ba94947"
     else
-      url "https://github.com/skyffla/skyffla/releases/download/v0.1.5/skyffla-v0.1.5-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "6313fb1eb0cd99a3b5743f1632cf2a7624ede3bf1f962a613f6c08a233101173"
+      url "https://github.com/skyffla/skyffla/releases/download/v0.1.6/skyffla-v0.1.6-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "a17ef4891cda49bc211a9644cb5a759eb8d272777e6f12262bcd32566504da92"
     end
   end
 
