@@ -1,24 +1,24 @@
 class Skyffla < Formula
   desc "Terminal-native peer communication tool"
   homepage "https://github.com/skyffla/skyffla"
-  version "0.1.3"
+  version "0.1.5"
   license "MIT"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/skyffla/skyffla/releases/download/v0.1.3/skyffla-v0.1.3-aarch64-apple-darwin.tar.gz"
-      sha256 "b73bc38b1626c06eb60e79803725a365e6a128410d12955675cabef1edb938f6"
+      url "https://github.com/skyffla/skyffla/releases/download/v0.1.5/skyffla-v0.1.5-aarch64-apple-darwin.tar.gz"
+      sha256 "bb83b85bc9af3a8794bfb7c1f1e58ebca03b2fecd7f858429296781112804efb"
     else
-      url "https://github.com/skyffla/skyffla/releases/download/v0.1.3/skyffla-v0.1.3-x86_64-apple-darwin.tar.gz"
-      sha256 "a1777172e72a79665e97d330a49a9104d38afab3bf0ba25f5de68fe26dbfa046"
+      url "https://github.com/skyffla/skyffla/releases/download/v0.1.5/skyffla-v0.1.5-x86_64-apple-darwin.tar.gz"
+      sha256 "16f928a061b9dbf012278f18868e2852440b9959b219d0419e4c8713fb2fe2f7"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/skyffla/skyffla/releases/download/v0.1.3/skyffla-v0.1.3-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8e87775f20cb1c0dc9c78281d0d082ea95c0bedfb7d764c2da3b57ba3a18762a"
+      url "https://github.com/skyffla/skyffla/releases/download/v0.1.5/skyffla-v0.1.5-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "b085da975fe6f0375a70965f2be40c3a4663584db36fb1cf9a93efb5d68d68ea"
     else
-      url "https://github.com/skyffla/skyffla/releases/download/v0.1.3/skyffla-v0.1.3-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "77183fdf60bff6ab5a493cb95d77ce629b82a96756368b6620a7e9a1af2cf08b"
+      url "https://github.com/skyffla/skyffla/releases/download/v0.1.5/skyffla-v0.1.5-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "6313fb1eb0cd99a3b5743f1632cf2a7624ede3bf1f962a613f6c08a233101173"
     end
   end
 
