@@ -1,25 +1,14 @@
 class Skyffla < Formula
   desc "Terminal-native peer communication tool"
   homepage "https://github.com/skyffla/skyffla"
-  version "0.1.0"
+  version "0.1.2"
   license "MIT"
 
-  if OS.mac?
-    if Hardware::CPU.arm?
-      url "https://github.com/skyffla/skyffla/releases/download/v0.1.0/skyffla-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "488f944ff68aa73dc02e6055c35a853df5c7865e12f28dacb6b68c7a829ef70c"
-    else
-      url "https://github.com/skyffla/skyffla/releases/download/v0.1.0/skyffla-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "25ac5d1e856e3b9657ae6d68a529430fa807ec000d32419168dd2957c0f7cb6e"
-    end
-  elsif OS.linux?
-    if Hardware::CPU.arm?
-      url "https://github.com/skyffla/skyffla/releases/download/v0.1.0/skyffla-v0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "01f8987b4d7438fb9230cd9ae4ad197b78de8f04f62cbb39dbb7a8b24b5ad017"
-    else
-      url "https://github.com/skyffla/skyffla/releases/download/v0.1.0/skyffla-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "14efb8564490c014c3ba8f3e59fda21c9e8be96e687a468b02a01b7c9ae72564"
-    end
+  if OS.linux? && Hardware::CPU.intel?
+    url "https://github.com/skyffla/skyffla/releases/download/v0.1.2/skyffla-v0.1.2-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "4aad160146af886017f290d686056792215ef3cb7a2fc8d7f99dac3990d31a23"
+  else
+    odie "This formula currently ships x86_64 Linux artifacts only."
   end
 
   def install
