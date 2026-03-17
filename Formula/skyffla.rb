@@ -1,24 +1,24 @@
 class Skyffla < Formula
   desc "CLI FIRST P2P FOR THE AGENTIC ERA"
   homepage "https://github.com/skyffla/skyffla"
-  version "1.2.0"
+  version "1.2.1"
   license "MIT"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/skyffla/skyffla/releases/download/v1.2.0/skyffla-v1.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "03985d1069ebd0fcf84ef3b06ab4fce7e4cb7d7ce508e7c131210544c7d71fea"
+      url "https://github.com/skyffla/skyffla/releases/download/v1.2.1/skyffla-v1.2.1-aarch64-apple-darwin.tar.gz"
+      sha256 "375f68811129be76e7daa9a1eab9fd2f516591207556d9f576590cb60a444038"
     else
-      url "https://github.com/skyffla/skyffla/releases/download/v1.2.0/skyffla-v1.2.0-x86_64-apple-darwin.tar.gz"
-      sha256 "e1852e8306665769949f19d52f5277197714728ffd5fe78625902207567fa12d"
+      url "https://github.com/skyffla/skyffla/releases/download/v1.2.1/skyffla-v1.2.1-x86_64-apple-darwin.tar.gz"
+      sha256 "b18fa3bf82c26b8d44ac52f6ee68bca807329e0a521946dc90c810cf1011d9eb"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/skyffla/skyffla/releases/download/v1.2.0/skyffla-v1.2.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0f2480b2c8a8679c534db3bd142a1a2af03dce3e75ad13b1ffdcc650cf4b1e15"
+      url "https://github.com/skyffla/skyffla/releases/download/v1.2.1/skyffla-v1.2.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "bfe5269681afa5843cced9128dfb904ced80cc439c8452468868b8b023f2ef7d"
     else
-      url "https://github.com/skyffla/skyffla/releases/download/v1.2.0/skyffla-v1.2.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "030131e7d5c6e5128f4e01638b571e5a7b74c2ea5265b9df4b81d7df9b4cfc13"
+      url "https://github.com/skyffla/skyffla/releases/download/v1.2.1/skyffla-v1.2.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "6748f196a5998474d2b2debe05bc5cdf01eb0f02c9453f8905e6db52db56e3e5"
     end
   end
 
