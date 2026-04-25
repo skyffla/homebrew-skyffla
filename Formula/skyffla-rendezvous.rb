@@ -1,24 +1,24 @@
 class SkyfflaRendezvous < Formula
   desc "Skyffla rendezvous server"
   homepage "https://github.com/skyffla/skyffla"
-  version "2.1.1"
+  version "2.1.2"
   license "MIT"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/skyffla/skyffla/releases/download/v2.1.1/skyffla-v2.1.1-aarch64-apple-darwin.tar.gz"
-      sha256 "268a2219c5cb955c353f97cf167abff9bb786a32de2aa49fc1f4c4805ab82181"
+      url "https://github.com/skyffla/skyffla/releases/download/v2.1.2/skyffla-v2.1.2-aarch64-apple-darwin.tar.gz"
+      sha256 "143b3659ee01a785d11d1a57093c35b1775406073fdcb5ee72a966a3e944cf8a"
     else
-      url "https://github.com/skyffla/skyffla/releases/download/v2.1.1/skyffla-v2.1.1-x86_64-apple-darwin.tar.gz"
-      sha256 "575863b5c0242f3087bcd7a7118c495c3c3092880018a01c63dddca86f3025c9"
+      url "https://github.com/skyffla/skyffla/releases/download/v2.1.2/skyffla-v2.1.2-x86_64-apple-darwin.tar.gz"
+      sha256 "424b333fe86ba205ff395eb781eeaa44868d6cb1b7f41d5cfd509e15ec048558"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/skyffla/skyffla/releases/download/v2.1.1/skyffla-v2.1.1-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "f1ad391db2f3df9b6be9fa415227d019395daf20e4b7aec5e330cd420fb8ff2c"
+      url "https://github.com/skyffla/skyffla/releases/download/v2.1.2/skyffla-v2.1.2-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "bdd5c26257ada8628f3600325a27b1069c3631fac21f276d82ee8da3540685e8"
     else
-      url "https://github.com/skyffla/skyffla/releases/download/v2.1.1/skyffla-v2.1.1-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "7c7ab9a2e5f290a20fe2a7c07b1a996c19e164f69f89c84aa67c3b8cf014d401"
+      url "https://github.com/skyffla/skyffla/releases/download/v2.1.2/skyffla-v2.1.2-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "b96ab4d78f71ca62350da0f280b13ac8471262a02f853b0c50a86de4b9575ed2"
     end
   end
 
